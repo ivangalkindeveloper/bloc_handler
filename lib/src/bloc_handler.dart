@@ -14,19 +14,6 @@ mixin BlocHandlerMixin<
   State? get defaultConnectionErrorState => null;
   State? get defaultUnknownErrorState => null;
 
-  Future<void> attempt(
-    FutureOr<void> Function() execute, {
-    void Function()? onFinally,
-  }) async {
-    try {
-      await execute();
-    } on Object catch (error, stackTrace) {
-      super.onError(error, stackTrace);
-    } finally {
-      onFinally?.call();
-    }
-  }
-
   Future<void> handle(
     Emitter<State> emit,
     FutureOr<void> Function() execute, {

@@ -1,6 +1,6 @@
 name: bloc_handler
 description: Bloc handler mixin package.
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/ivangalkindeveloper/bloc_handler
 
 environment:

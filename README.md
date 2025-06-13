@@ -63,12 +63,12 @@ class ProfileBloc extends Bloc<Event, State>
 ```
 
 # API
-```fallback``` - flag that determines whether to emit to the initial state;
-```onError``` - callback triggered for any error;
-```getApiErrorState``` - closure for ApiError, in case a different state is needed, different from the default state;
-```getConnectionErrorState``` - closure for ConnectionError, in case a different state is needed, different from the default state;
-```getUnknownErrorState``` - closure for unkwnonwn error, in case a different state is needed, different from the default state;
-```getFallbackState``` - closure for fallback state, in case a different state is needed, different from the initial state;
+```fallback``` - flag that determines whether to emit to the initial state;\
+```onError``` - callback triggered for any error;\
+```getApiErrorState``` - closure for ApiError, in case a different state is needed, different from the default state;\
+```getConnectionErrorState``` - closure for ConnectionError, in case a different state is needed, different from the default state;\
+```getUnknownErrorState``` - closure for unkwnonwn error, in case a different state is needed, different from the default state;\
+```getFallbackState``` - closure for fallback state, in case a different state is needed, different from the initial state;\
 ```onFinally``` - callback triggered in the finally section.
 
 # Additional information
